@@ -1,6 +1,18 @@
 import React from 'react'
 import './_rules.scss'
 import Button from '../components/button/button'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "配信ルール | 雨東風ぬめちゃ 朝型になりたい狼人間Vtuber☔️🍃🐺",
+  description: "ぬめちゃの配信ルールについてまとめています。",
+  openGraph: {
+    title: "配信ルール | 雨東風ぬめちゃ 朝型になりたい狼人間Vtuber☔️🍃🐺",
+    description: "ぬめちゃの配信ルールについてまとめています。",
+    url: "https://amakochi-numecha.vercel.app/rules",
+    type: "article",
+  },
+};
 
 export default function Page() {
   return (

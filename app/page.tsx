@@ -2,6 +2,18 @@ import React from 'react'
 import Image from 'next/image'
 import './styles/top.scss'
 import Button from './components/button/button'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "雨東風ぬめちゃ 朝型になりたい狼人間Vtuber☔️🍃🐺",
+  description: "雨東風ぬめちゃの公式サイトです。",
+  openGraph: {
+    title: "雨東風ぬめちゃ 朝型になりたい狼人間Vtuber☔️🍃🐺",
+    description: "雨東風ぬめちゃの公式サイトです。",
+    url: "https://amakochi-numecha.vercel.app",
+    type: "website",
+  },
+};
 
 export default function Page() {
   return (
