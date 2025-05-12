@@ -1,0 +1,41 @@
+@import './_mq.scss';
+
+.profile {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-name {
+  margin-top: 64px;
+  max-width: 640px;
+  h2 {
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    margin-bottom: 40px;
+    span {
+      font-family: 'Buildings', sans-serif;
+      font-size: 40px;
+    }
+  }
+  p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+
+.button-wrap {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  @include mq {
+    flex-direction: row;
+  }
+}
+
+
