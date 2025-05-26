@@ -42,10 +42,38 @@ body::before {
 }
 
 h1 {
-  margin-top: 24px;
+  margin-top: 80px;
   font-size: 40px;
   margin-bottom: 24px;
-  font-family: 'Buildings';
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  z-index: 2;
+  a {
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    font-size: 14px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 footer {

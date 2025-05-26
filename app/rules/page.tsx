@@ -141,7 +141,7 @@ export default function Page() {
         </p>
       </div>
       <div className="button-wrap">
-        <Button href="/" text="戻る" />
+        <Button href="/" text="トップに戻る" />
       </div>
     </>
   );

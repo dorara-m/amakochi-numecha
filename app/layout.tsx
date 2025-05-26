@@ -1,10 +1,11 @@
-import React from 'react'
-import './styles/app.scss'
+import Image from "next/image";
+import React from "react";
+import "./styles/app.scss";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="ja">
@@ -19,9 +20,22 @@ export default function RootLayout({
         <meta property="og:locale" content="ja_JP" />
       </head>
       <body cz-shortcut-listen="true">
+        <header>
+          <a href="/">
+            <div className="icon">
+              <Image
+                src="/images/icon-bg2.png"
+                alt="雨東風ぬめちゃ"
+                width={40}
+                height={40}
+              />
+            </div>
+            <p>Amakochi Numecha</p>
+          </a>
+        </header>
         <div className="container">{children}</div>
         <footer>
-          <p>Ver. 0.1</p>
+          <p>Ver. 0.2</p>
         </footer>
       </body>
     </html>

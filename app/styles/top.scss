@@ -1,5 +1,41 @@
 @import './_mq.scss';
 
+.schedule {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  @include mq {
+    gap: 48px;
+  }
+  h2 {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    @include mq {
+      font-size: 45px;
+    }
+  }
+  img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: arrow 1s infinite;
+  }
+  @keyframes arrow {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+  }
+}
+
 .profile {
   margin-top: 80px;
   width: 100%;
@@ -16,10 +52,6 @@
     font-size: 32px;
     letter-spacing: 0.04em;
     margin-bottom: 40px;
-    span {
-      font-family: 'Buildings', sans-serif;
-      font-size: 40px;
-    }
   }
   p {
     margin-top: 16px;

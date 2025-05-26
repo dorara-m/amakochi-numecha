@@ -19,7 +19,13 @@ export default function Page() {
   return (
     <>
       <h1 className="hidden">雨東風ぬめちゃ公式サイト</h1>
+      <div className="schedule">
+        <h2>今週のスケジュール</h2>
+        <img src="/images/schedule.jpeg" alt="今週のスケジュール" />
+        <div className="arrow">↓</div>
+      </div>
       <div className="profile">
+        <h2 className="hidden">プロフィール</h2>
         <div className="profile-img">
           <Image
             src="/images/icon-bg2.png"
