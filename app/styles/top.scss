@@ -17,6 +17,12 @@
     @include mq {
       font-size: 45px;
     }
+    .start-date {
+      font-size: 24px;
+      @include mq {
+        font-size: 36px;
+      }
+    }
   }
   img {
     width: 100%;

@@ -16,11 +16,28 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const now = new Date();
+  const startOfWeek = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate() - now.getDay() + 1
+  );
+  const startDate = startOfWeek
+    .toLocaleDateString("ja-JP", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    })
+    .replace(/\//g, "/");
   return (
     <>
       <h1 className="hidden">雨東風ぬめちゃ公式サイト</h1>
       <div className="schedule">
-        <h2>今週のスケジュール</h2>
+        <h2>
+          今週
+          <span className="start-date">{`（${startDate}〜）`}</span>
+          のスケジュール
+        </h2>
         <img src="/images/schedule.jpeg" alt="今週のスケジュール" />
         <div className="arrow">↓</div>
       </div>
