@@ -16,19 +16,8 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const now = new Date();
-  const startOfWeek = new Date(
-    now.getFullYear(),
-    now.getMonth(),
-    now.getDate() - now.getDay() + 1
-  );
-  const startDate = startOfWeek
-    .toLocaleDateString("ja-JP", {
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-    })
-    .replace(/\//g, "/");
+  const thisDay = 16;
+  const thisMonth = 6;
   return (
     <>
       <h1 className="hidden">雨東風ぬめちゃ公式サイト</h1>
@@ -38,8 +27,8 @@ export default function Page() {
           <div className="schedule-list">
             <div className="schedule-item">
               <div className="schedule-item-date">
-                <span className="month">6</span>
-                <span className="day">16</span>
+                <span className="month">{thisMonth}</span>
+                <span className="day">{thisDay}</span>
               </div>
               <div className="schedule-item-week">月</div>
               <div className="schedule-item-wrap">
@@ -55,8 +44,8 @@ export default function Page() {
             </div>
             <div className="schedule-item">
               <div className="schedule-item-date">
-                <span className="month">6</span>
-                <span className="day">17</span>
+                <span className="month">{thisMonth}</span>
+                <span className="day">{thisDay + 1}</span>
               </div>
               <div className="schedule-item-week">火</div>
               <div className="schedule-item-wrap">
@@ -72,8 +61,8 @@ export default function Page() {
             </div>
             <div className="schedule-item">
               <div className="schedule-item-date">
-                <span className="month">6</span>
-                <span className="day">18</span>
+                <span className="month">{thisMonth}</span>
+                <span className="day">{thisDay + 2}</span>
               </div>
               <div className="schedule-item-week">水</div>
               <div className="schedule-item-wrap">
@@ -85,8 +74,8 @@ export default function Page() {
             </div>
             <div className="schedule-item">
               <div className="schedule-item-date">
-                <span className="month">6</span>
-                <span className="day">19</span>
+                <span className="month">{thisMonth}</span>
+                <span className="day">{thisDay + 3}</span>
               </div>
               <div className="schedule-item-week">木</div>
               <div className="schedule-item-wrap">
@@ -102,8 +91,8 @@ export default function Page() {
             </div>
             <div className="schedule-item">
               <div className="schedule-item-date">
-                <span className="month">6</span>
-                <span className="day">20</span>
+                <span className="month">{thisMonth}</span>
+                <span className="day">{thisDay + 4}</span>
               </div>
               <div className="schedule-item-week">金</div>
               <div className="schedule-item-wrap">
@@ -119,10 +108,10 @@ export default function Page() {
             </div>
             <div className="schedule-item">
               <div className="schedule-item-date">
-                <span className="month">6</span>
-                <span className="day">21</span>
+                <span className="month">{thisMonth}</span>
+                <span className="day">{thisDay + 5}</span>
               </div>
-              <div className="schedule-item-week">土</div>
+              <div className="schedule-item-week -sat">土</div>
               <div className="schedule-item-wrap">
                 <div className="schedule-item-set">
                   <div className="schedule-item-time">15:00</div>
@@ -136,10 +125,10 @@ export default function Page() {
             </div>
             <div className="schedule-item">
               <div className="schedule-item-date">
-                <span className="month">6</span>
-                <span className="day">22</span>
+                <span className="month">{thisMonth}</span>
+                <span className="day">{thisDay + 6}</span>
               </div>
-              <div className="schedule-item-week">日</div>
+              <div className="schedule-item-week -sun">日</div>
               <div className="schedule-item-wrap">
                 <div className="schedule-item-set">
                   <div className="schedule-item-time">14:00</div>
