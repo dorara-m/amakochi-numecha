@@ -1,14 +1,15 @@
 @import './_mq.scss';
 
-.schedule {
+.scheduleArea {
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 32px;
   position: relative;
+  display: none; 
   @include mq {
+    display: flex;
     gap: 48px;
   }
   h2 {
@@ -24,9 +25,90 @@
       }
     }
   }
-  img {
+  .schedule {
     width: 100%;
     border-radius: 20px;
+    background-image: url('/images/schedule-base.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 16/9;
+    font-family: 'Buildings', sans-serif;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+      width: 52%;
+      margin-left: auto;
+      margin-right: 16px;
+      height: 100%;
+    }
+    &-item {
+      padding: 8px 16px;
+      background-color: #fff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+      &-date {
+        width: 50px;
+        height: 50px;
+        background-color: #d277fd;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-size: 18px;
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 10%;
+          left: 49%;
+          width: 3px;
+          height: 40px;
+          background-color: #fff;
+          transform: rotate(35deg);
+        }
+        .month {
+          position: absolute;
+          top: 6px;
+          right: 26px;
+        }
+        .day {
+          position: absolute;
+          top: 22px;
+          left: 22px;
+        }
+      }
+      &-week {
+        font-size: 50px;
+        color: #bfc6dd;
+        transform: translateY(-6px);
+      }
+      &-wrap {
+        margin-left: 12px;
+      }
+      &-set {
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+        font-family: 'keifont', sans-serif;
+        font-size: 22px;
+        color: #5c5e63;
+        &:nth-child(2) {
+          margin-top: 5px;
+          margin-left: 30px;
+        }
+      }
+      &-time {
+        font-size: 18px;
+      }
+    }
   }
   .arrow {
     position: absolute;

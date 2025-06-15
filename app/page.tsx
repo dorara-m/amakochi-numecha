@@ -32,13 +32,127 @@ export default function Page() {
   return (
     <>
       <h1 className="hidden">雨東風ぬめちゃ公式サイト</h1>
-      <div className="schedule">
-        <h2>
-          今週
-          <span className="start-date">{`（${startDate}〜）`}</span>
-          のスケジュール
-        </h2>
-        <img src="/images/schedule.jpeg" alt="今週のスケジュール" />
+      <div className="scheduleArea">
+        <h2>配信スケジュール</h2>
+        <div className="schedule">
+          <div className="schedule-list">
+            <div className="schedule-item">
+              <div className="schedule-item-date">
+                <span className="month">6</span>
+                <span className="day">16</span>
+              </div>
+              <div className="schedule-item-week">月</div>
+              <div className="schedule-item-wrap">
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">08:00</div>
+                  <div className="schedule-item-title">ネイル雑談</div>
+                </div>
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">23:00</div>
+                  <div className="schedule-item-title">龍が如く5</div>
+                </div>
+              </div>
+            </div>
+            <div className="schedule-item">
+              <div className="schedule-item-date">
+                <span className="month">6</span>
+                <span className="day">17</span>
+              </div>
+              <div className="schedule-item-week">火</div>
+              <div className="schedule-item-wrap">
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">08:00</div>
+                  <div className="schedule-item-title">弾き語り</div>
+                </div>
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">23:00</div>
+                  <div className="schedule-item-title">マイクラ</div>
+                </div>
+              </div>
+            </div>
+            <div className="schedule-item">
+              <div className="schedule-item-date">
+                <span className="month">6</span>
+                <span className="day">18</span>
+              </div>
+              <div className="schedule-item-week">水</div>
+              <div className="schedule-item-wrap">
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">17:00</div>
+                  <div className="schedule-item-title">ぬめらじ#9投稿</div>
+                </div>
+              </div>
+            </div>
+            <div className="schedule-item">
+              <div className="schedule-item-date">
+                <span className="month">6</span>
+                <span className="day">19</span>
+              </div>
+              <div className="schedule-item-week">木</div>
+              <div className="schedule-item-wrap">
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">08:00</div>
+                  <div className="schedule-item-title">歌枠</div>
+                </div>
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">23:00</div>
+                  <div className="schedule-item-title">龍が如く5</div>
+                </div>
+              </div>
+            </div>
+            <div className="schedule-item">
+              <div className="schedule-item-date">
+                <span className="month">6</span>
+                <span className="day">20</span>
+              </div>
+              <div className="schedule-item-week">金</div>
+              <div className="schedule-item-wrap">
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">08:00</div>
+                  <div className="schedule-item-title">マイクラ</div>
+                </div>
+                {/* <div className="schedule-item-set">
+                  <div className="schedule-item-time">23:00</div>
+                  <div className="schedule-item-title">龍が如く5</div>
+                </div> */}
+              </div>
+            </div>
+            <div className="schedule-item">
+              <div className="schedule-item-date">
+                <span className="month">6</span>
+                <span className="day">21</span>
+              </div>
+              <div className="schedule-item-week">土</div>
+              <div className="schedule-item-wrap">
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">15:00</div>
+                  <div className="schedule-item-title">歌枠</div>
+                </div>
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">23:00</div>
+                  <div className="schedule-item-title">龍が如く5</div>
+                </div>
+              </div>
+            </div>
+            <div className="schedule-item">
+              <div className="schedule-item-date">
+                <span className="month">6</span>
+                <span className="day">22</span>
+              </div>
+              <div className="schedule-item-week">日</div>
+              <div className="schedule-item-wrap">
+                <div className="schedule-item-set">
+                  <div className="schedule-item-time">14:00</div>
+                  <div className="schedule-item-title">ウマ娘</div>
+                </div>
+                {/* <div className="schedule-item-set">
+                  <div className="schedule-item-time">23:00</div>
+                  <div className="schedule-item-title">龍が如く5</div>
+                </div> */}
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="arrow">↓</div>
       </div>
       <div className="profile">
