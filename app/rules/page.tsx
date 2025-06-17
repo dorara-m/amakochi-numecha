@@ -20,7 +20,7 @@ export default function Page() {
       <h1>ぬめちゃを見てくれる皆にお願い</h1>
       <div className="note">
         {/* microCMSでいずれ設定 */}
-        <p>ぬめちゃの配信ルールについてまとめています。(2025/05/12更新)</p>
+        <p>ぬめちゃの配信ルールについてまとめています。(2025/06/17更新)</p>
         <p>
           ぬめちゃ自身と見てくれているリスナーさん、初見さん、なるべく多くのみんなが安心できるように考えた内容なので、ご協力お願いします！
         </p>
@@ -30,6 +30,7 @@ export default function Page() {
             配信内容を無視して、プレイして欲しいゲーム、配信企画を要求すること
           </li>
           <li>過度な自分語り、過度な話題の誘導</li>
+          <li>同じコメントを何度も連投すること</li>
           <li>行き過ぎた身内ノリ。ぬめちゃの親や兄弟を自称することなど</li>
           <li>
             ぬめちゃ及びリスナーに対して、信頼関係を十分に築かないまま、ため口や上下関係を意識させるような口調で接すること
@@ -45,39 +46,33 @@ export default function Page() {
           </li>
         </ul>
         <p>
-          迷惑行為を見かけた場合、基本的にぬめちゃが対応しようと思っています。
+          迷惑行為への対応はぬめちゃが行います。
           <br />
-          なので、リスナーさんは基本「触れない」「反応しない」「無視」でお願いします。
+          リスナーさんは基本スルー！「触れない」「反応しない」「無視」でお願いします。
           <br />
-          ただ配信が暗い空気になってしまうと悲しいので、気にせず明るく振る舞ってくれると嬉しいです！
+          ただチャットが暗い空気になってしまうと悲しいので、気にせず明るく振る舞ってくれると嬉しいです！
         </p>
         <p>
-          迷惑行為が多いとぬめちゃが感じた場合、予告なくブロック対応をとる場合があります。
+          迷惑行為が多いとぬめちゃが感じたユーザーに対しては、予告なくブロック対応をとる場合があります。
           <br />
           ただ、見落とす場合もあるため「対応忘れてるかもな」「気になる人がずっといるな」などありましたら以下マシュマロまでご一報くれると助かります。
-          <br />
-          また自分のコメントが迷惑行為にあたるかもしれない、と不安を感じた方もこっそり教えてください。たぶん大丈夫です。
-          <br />
-          基本的に注意しても直らない人にのみ対応をしようと思っています。
           <br />
           <a href="https://marshmallow-qa.com/numechaaa" target="_blank">
             https://marshmallow-qa.com/numechaaa
           </a>
         </p>
       </div>
-      <div className="note">
-        <h2>
-          For International Viewers (This translation was done by AI and may not
-          be entirely accurate.)
-        </h2>
-        <p>Here are the streaming rules for Numecha. (Updated: 2025/05/12)</p>
+      <div className="note en">
+        <p>
+          This page summarizes Numecha's streaming rules. (Updated: 2025/06/17)
+        </p>
         <p>
           These rules have been established to ensure a comfortable environment
-          for Numecha, regular viewers, and newcomers. Your cooperation is
+          for Numecha, regular viewers, and new visitors. Your cooperation is
           greatly appreciated!
         </p>
         <p>
-          The following behaviors are considered disruptive during Numecha's
+          The following behaviors are considered disruptive in Numecha's
           streams:
         </p>
         <ul>
@@ -85,13 +80,14 @@ export default function Page() {
             Ignoring stream content and demanding specific games or stream ideas
           </li>
           <li>Excessive self-talk or topic steering</li>
+          <li>Spamming the same comment repeatedly</li>
           <li>
             Overly familiar behavior, such as claiming to be Numecha's family
-            member
+            members
           </li>
           <li>
             Using casual language or implying hierarchical relationships with
-            Numecha or other viewers without establishing proper rapport
+            Numecha or other viewers without establishing proper trust
           </li>
           <li>
             Excessive expressions of affection towards Numecha (e.g., "I want to
@@ -102,38 +98,32 @@ export default function Page() {
             to engage with
           </li>
           <li>
-            Topics related to self-harm, violence, sexual content, politics, or
+            Topics involving self-harm, violence, sexual content, politics, or
             religion
           </li>
           <li>
-            Joining Numecha's online game matches without permission (sniping)
+            Sniping (joining without permission) Numecha's online game matches
           </li>
           <li>
-            Mentioning other content creators or self-promotion without context
+            Mentioning other content creators' names or promoting them without
+            context
           </li>
         </ul>
         <p>
-          When disruptive behavior is observed, Numecha will handle the
-          situation.
+          Numecha will handle disruptive behavior.
           <br />
-          Please refrain from engaging with such behavior - do not interact,
-          respond, or acknowledge it.
+          Viewers are asked to ignore such behavior - "Don't engage," "Don't
+          react," "Ignore."
           <br />
-          However, we encourage you to maintain a positive atmosphere during the
-          stream!
+          However, if the chat atmosphere becomes negative, we'd appreciate if
+          you could continue to maintain a positive environment!
         </p>
         <p>
-          If Numecha determines that disruptive behavior is persistent, blocking
-          may occur without warning.
+          Users who engage in frequent disruptive behavior may be blocked
+          without warning.
           <br />
-          If you notice any concerning behavior that might have been overlooked,
-          please report it through the Marshmallow link below.
-          <br />
-          If you're unsure whether your comment might be considered disruptive,
-          feel free to ask privately. It's probably fine!
-          <br />
-          Generally, action will only be taken against those who continue
-          disruptive behavior after being warned.
+          If you notice any concerning behavior that hasn't been addressed,
+          please report it through the following Marshmallow link:
           <br />
           <a href="https://marshmallow-qa.com/numechaaa" target="_blank">
             https://marshmallow-qa.com/numechaaa
