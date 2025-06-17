@@ -1,13 +1,43 @@
 @import './_mq.scss';
 
+section {
+  padding: 40px 0;
+  @include mq {
+    padding: 80px 0;
+  }
+
+  &.-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+    text-align: center;
+    @include mq {
+      font-size: 45px;
+    }
+  }
+
+  .text-wrap {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+
 .scheduleArea {
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 32px;
   position: relative;
-  display: flex;
   @include mq {
     gap: 48px;
   }
@@ -139,10 +169,13 @@
   }
   .arrow {
     position: absolute;
-    bottom: 50px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     animation: arrow 1s infinite;
+    @include mq {
+      bottom: 30px;
+    }
   }
   @keyframes arrow {
     0% { transform: translateY(0); }
@@ -162,16 +195,14 @@
 
 .profile-name {
   margin-top: 64px;
-  max-width: 640px;
   h2 {
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: 0.04em;
     margin-bottom: 40px;
-  }
-  p {
-    margin-top: 16px;
-    font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.2;
+    @include mq {
+      font-size: 32px;
+    }
   }
 }
 
@@ -185,4 +216,18 @@
   }
 }
 
+.membership {
+  a {
+    margin-top: 32px;
+  }
+}
 
+.hashtag {
+  ul {
+    padding-left: 20px;
+    li {
+      font-size: 14px;
+      margin-top: 16px;
+    }
+  }
+}
