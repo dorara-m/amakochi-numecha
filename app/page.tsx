@@ -16,13 +16,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const thisDay = 16;
+  const thisDay = 23;
   const thisMonth = 6;
   return (
     <>
       <h1 className="hidden">雨東風ぬめちゃ公式サイト</h1>
       <section className="scheduleArea">
-        <h2>配信スケジュール</h2>
+        <h2>
+          配信スケジュール <span>2025.6.23 更新!</span>
+        </h2>
         <div className="schedule">
           <div className="schedule-list">
             <div className="schedule-item">
@@ -32,13 +34,13 @@ export default function Page() {
               </div>
               <div className="schedule-item-week">月</div>
               <div className="schedule-item-wrap">
-                <div className="schedule-item-set">
+                {/* <div className="schedule-item-set">
                   <div className="schedule-item-time">08:00</div>
                   <div className="schedule-item-title">ネイル雑談</div>
-                </div>
+                </div> */}
                 <div className="schedule-item-set">
                   <div className="schedule-item-time">23:00</div>
-                  <div className="schedule-item-title">龍が如く5</div>
+                  <div className="schedule-item-title">マイクラ</div>
                 </div>
               </div>
             </div>
@@ -51,11 +53,13 @@ export default function Page() {
               <div className="schedule-item-wrap">
                 <div className="schedule-item-set">
                   <div className="schedule-item-time">08:00</div>
-                  <div className="schedule-item-title">弾き語り</div>
+                  <div className="schedule-item-title">ネイル</div>
                 </div>
                 <div className="schedule-item-set">
                   <div className="schedule-item-time">23:00</div>
-                  <div className="schedule-item-title">マイクラ</div>
+                  <div className="schedule-item-title">
+                    マリオギャラクシー #5
+                  </div>
                 </div>
               </div>
             </div>
@@ -67,8 +71,12 @@ export default function Page() {
               <div className="schedule-item-week">水</div>
               <div className="schedule-item-wrap">
                 <div className="schedule-item-set">
-                  <div className="schedule-item-time">17:00</div>
-                  <div className="schedule-item-title">ぬめらじ#9投稿</div>
+                  <div className="schedule-item-time">22:00</div>
+                  <div className="schedule-item-title">
+                    るーるきゃべつ
+                    <br />
+                    違う星のぼくら #3
+                  </div>
                 </div>
               </div>
             </div>
@@ -79,13 +87,15 @@ export default function Page() {
               </div>
               <div className="schedule-item-week">木</div>
               <div className="schedule-item-wrap">
-                <div className="schedule-item-set">
+                {/* <div className="schedule-item-set">
                   <div className="schedule-item-time">08:00</div>
                   <div className="schedule-item-title">歌枠</div>
-                </div>
+                </div> */}
                 <div className="schedule-item-set">
                   <div className="schedule-item-time">23:00</div>
-                  <div className="schedule-item-title">龍が如く5</div>
+                  <div className="schedule-item-title">
+                    マリオギャラクシー #6
+                  </div>
                 </div>
               </div>
             </div>
@@ -98,7 +108,7 @@ export default function Page() {
               <div className="schedule-item-wrap">
                 <div className="schedule-item-set">
                   <div className="schedule-item-time">08:00</div>
-                  <div className="schedule-item-title">マイクラ</div>
+                  <div className="schedule-item-title">弾き語り</div>
                 </div>
                 {/* <div className="schedule-item-set">
                   <div className="schedule-item-time">23:00</div>
@@ -114,12 +124,14 @@ export default function Page() {
               <div className="schedule-item-week -sat">土</div>
               <div className="schedule-item-wrap">
                 <div className="schedule-item-set">
-                  <div className="schedule-item-time">15:00</div>
-                  <div className="schedule-item-title">歌枠</div>
+                  <div className="schedule-item-time">14:00</div>
+                  <div className="schedule-item-title">
+                    おおかみと観るウマ娘
+                  </div>
                 </div>
                 <div className="schedule-item-set">
                   <div className="schedule-item-time">23:00</div>
-                  <div className="schedule-item-title">龍が如く5</div>
+                  <div className="schedule-item-title">マイクラ</div>
                 </div>
               </div>
             </div>
@@ -132,7 +144,7 @@ export default function Page() {
               <div className="schedule-item-wrap">
                 <div className="schedule-item-set">
                   <div className="schedule-item-time">14:00</div>
-                  <div className="schedule-item-title">ウマ娘</div>
+                  <div className="schedule-item-title">ボカロ縛り歌枠</div>
                 </div>
                 {/* <div className="schedule-item-set">
                   <div className="schedule-item-time">23:00</div>
@@ -155,10 +167,10 @@ export default function Page() {
           />
         </div>
         <div className="profile-name">
-          <h2>
+          <div className="profile-name-text">
             <span>雨東風ぬめちゃ</span> <br />
             Amakochi Numecha
-          </h2>
+          </div>
           <div className="text-wrap">
             <p>朝型になりたい狼人間VTuber☔️🍃🐺</p>
             <p>

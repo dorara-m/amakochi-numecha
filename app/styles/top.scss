@@ -18,8 +18,16 @@ section {
     letter-spacing: 0.04em;
     margin-bottom: 32px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     @include mq {
       font-size: 45px;
+    }
+    span {
+      font-size: 16px;
+      color: rgb(230, 59, 59);
     }
   }
 
@@ -195,11 +203,13 @@ section {
 
 .profile-name {
   margin-top: 64px;
-  h2 {
+  &-text {
     font-size: 24px;
     letter-spacing: 0.04em;
     margin-bottom: 40px;
     line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
     @include mq {
       font-size: 32px;
     }
