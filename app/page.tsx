@@ -22,9 +22,8 @@ export default function Page() {
     <>
       <h1 className="hidden">雨東風ぬめちゃ公式サイト</h1>
       <section className="scheduleArea">
-        <h2>
-          配信スケジュール <span>2025.6.23 更新!</span>
-        </h2>
+        <h2>配信スケジュール</h2>
+        <div className="schedule-update">2025.6.24 更新!</div>
         <div className="schedule">
           <div className="schedule-list">
             <div className="schedule-item">
@@ -73,7 +72,7 @@ export default function Page() {
                 <div className="schedule-item-set">
                   <div className="schedule-item-time">22:00</div>
                   <div className="schedule-item-title">
-                    るーるきゃべつ
+                    ろーるきゃべつ
                     <br />
                     違う星のぼくら #3
                   </div>
