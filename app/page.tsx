@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   // 基準となる日付を設定（例：2025年6月30日）
-  const baseDate = dayjs("2025-06-30");
+  const baseDate = dayjs("2025-07-07");
 
   // 1週間の日付を生成
   const weekDates = Array.from({ length: 7 }, (_, index) => {
@@ -33,7 +33,7 @@ export default function Page() {
       <h1 className="hidden">雨東風ぬめちゃ公式サイト</h1>
       <section className="scheduleArea">
         <h2>配信スケジュール</h2>
-        <div className="schedule-update">2025.7.3 更新!</div>
+        <div className="schedule-update">2025.7.8 更新!</div>
         <div className="schedule">
           <div className="schedule-list">
             {weekDates.map((date, index) => (
@@ -66,36 +66,35 @@ export default function Page() {
                   {index === 1 && (
                     <>
                       <div className="schedule-item-set">
-                        ---
-                        {/* <div className="schedule-item-time">08:00</div>
-                        <div className="schedule-item-title">ネイル</div> */}
-                      </div>
-                      {/* <div className="schedule-item-set">
-                        <div className="schedule-item-time">23:00</div>
+                        <div className="schedule-item-time">22:00</div>
                         <div className="schedule-item-title">
-                          マリオギャラクシー #5
+                          R.E.P.O. コラボ
                         </div>
-                      </div> */}
+                      </div>
                     </>
                   )}
                   {index === 2 && (
                     <div className="schedule-item-set">
-                      <div className="schedule-item-time">23:00</div>
+                      <div className="schedule-item-time">22:00</div>
                       <div className="schedule-item-title">
-                        龍が如く8外伝 #2
+                        ろーるきゃべつ
+                        <br />
+                        違う星の僕ら #4
                       </div>
                     </div>
                   )}
                   {index === 3 && (
                     <>
-                      {/* <div className="schedule-item-set">
-                        <div className="schedule-item-time">08:00</div>
-                        <div className="schedule-item-title">歌枠</div>
-                      </div> */}
+                      <div className="schedule-item-set">
+                        <div className="schedule-item-time">17:00</div>
+                        <div className="schedule-item-title">
+                          ぬめらじ #10更新
+                        </div>
+                      </div>
                       <div className="schedule-item-set">
                         <div className="schedule-item-time">23:00</div>
                         <div className="schedule-item-title">
-                          マリオギャラクシー #6
+                          龍が如く8外伝 #3
                         </div>
                       </div>
                     </>
@@ -104,7 +103,7 @@ export default function Page() {
                     <>
                       <div className="schedule-item-set">
                         <div className="schedule-item-time">08:00</div>
-                        <div className="schedule-item-title">マイクラ</div>
+                        <div className="schedule-item-title">弾き語り</div>
                       </div>
                       {/* <div className="schedule-item-set">
                         <div className="schedule-item-time">23:00</div>
@@ -116,7 +115,9 @@ export default function Page() {
                     <>
                       <div className="schedule-item-set">
                         {/* <div className="schedule-item-time">14:00</div> */}
-                        <div className="schedule-item-title">おやすみ</div>
+                        <div className="schedule-item-title">
+                          引っ越しのため、おやすみ
+                        </div>
                       </div>
                       {/* <div className="schedule-item-set">
                         <div className="schedule-item-time">23:00</div>
@@ -127,8 +128,7 @@ export default function Page() {
                   {index === 6 && (
                     <>
                       <div className="schedule-item-set">
-                        <div className="schedule-item-time">14:00</div>
-                        <div className="schedule-item-title">マイクラ</div>
+                        <div className="schedule-item-title">未定</div>
                       </div>
                       {/* <div className="schedule-item-set">
                         <div className="schedule-item-time">23:00</div>
