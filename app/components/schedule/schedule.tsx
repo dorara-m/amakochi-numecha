@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import dayjs from "dayjs";
 
 export default function Schedule() {
-  const baseDate = dayjs("2025-07-28");
+  const baseDate = dayjs("2025-08-04");
 
   // 1週間の日付を生成
   const weekDates = Array.from({ length: 7 }, (_, index) => {
@@ -23,32 +23,32 @@ export default function Schedule() {
     // 月
     [
       // { ja: "スケジュールたて", en: "Schedule Planning" },
-      { ja: "龍が如く8外伝", en: "Like a Dragon 8 Gaiden" },
+      // { ja: "--", en: "--" },
     ],
     // 火
     [
       // { ja: "ネイル", en: "Nail" },
-      { ja: "おやすみ", en: "No plans" },
+      // { ja: "おやすみ", en: "No plans" },
     ],
     // 水
     [
       // { ja: "弾き語り", en: "Singing & Guitar" },
-      { ja: "ろーるきゃべつ APEX", en: "APEX with my friend" },
+      // { ja: "ろーるきゃべつ APEX", en: "APEX with my friend" },
     ],
     // 木
     [
-      // { ja: "", en: "" },
-      { ja: "対談コラボ", en: "Talking with my fiend" },
+      { ja: "【朝活】ネイル", en: "Talking in morning" },
+      { ja: "龍が如く8外伝", en: "Like a Dragon 8 Gaiden" },
     ],
     // 金
     [
-      // { ja: "未定", en: "TBD" },
-      { ja: "マイクラ夏祭り2025 day2", en: "Minecraft summer festival" },
+      { ja: "【朝活】弾き語り", en: "Guitar and Vocal" },
+      // { ja: "マイクラ夏祭り2025 day2", en: "Minecraft summer festival" },
     ],
     // 土
     [
-      { ja: "龍が如く8外伝", en: "Like a Dragon 8 Gaiden" },
-      // { ja: "マイクラ", en: "Minecraft" },
+      { ja: "未定", en: "TBD" },
+      // { ja: "龍が如く8外伝", en: "Like a Dragon 8 Gaiden" },
     ],
     // 日
     [
@@ -56,12 +56,12 @@ export default function Schedule() {
       // { ja: "マリオギャラクシー #8", en: "Mario Galaxy #8" },
     ],
   ];
-  
+
   return (
     <section className="scheduleArea">
       <h2>{isEnglish ? "Streaming Schedule" : "配信スケジュール"}</h2>
       <div className="schedule-update">
-        2025.7.27 {isEnglish ? "Updated!" : "更新!"}
+        2025.8.7 {isEnglish ? "Updated!" : "更新!"}
       </div>
       <button
         className="schedule-toggle"
@@ -93,11 +93,11 @@ export default function Schedule() {
                         {(() => {
                           if (index === 0) return i === 0 ? "22:00" : "";
                           if (index === 1) return i === 0 ? "" : "";
-                          if (index === 2) return i === 0 ? "22:00" : "";
-                          if (index === 3) return i === 0 ? "22:00" : "";
-                          if (index === 4) return i === 0 ? "22:00" : "";
-                          if (index === 5) return "14:00";
-                          if (index === 6) return i === 0 ? "14:00" : "";
+                          if (index === 2) return i === 0 ? "08:00" : "22:00";
+                          if (index === 3) return i === 0 ? "08:00" : "23:00";
+                          if (index === 4) return i === 0 ? "08:00" : "";
+                          // if (index === 5) return "10:00";
+                          if (index === 6) return i === 0 ? "16:00" : "";
                           return "";
                         })()}
                       </div>
@@ -113,5 +113,5 @@ export default function Schedule() {
       </div>
       <div className="arrow">↓</div>
     </section>
-  )
+  );
 }
