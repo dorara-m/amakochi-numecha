@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import dayjs from "dayjs";
 
 export default function Schedule() {
-  const baseDate = dayjs("2025-08-11");
+  const baseDate = dayjs("2025-09-22");
 
   // 1週間の日付を生成
   const weekDates = Array.from({ length: 7 }, (_, index) => {
@@ -22,36 +22,36 @@ export default function Schedule() {
   const scheduleTitles = [
     // 月
     [
-      { ja: "【朝活】マイクラ", en: "Minecraft" },
-      { ja: "龍が如く8外伝", en: "Like a Dragon 8 Gaiden" },
+      // { ja: "【朝活】マイクラ", en: "Minecraft" },
+      { ja: "誕生日耐久GTA", en: "Grand Theft Auto" },
     ],
     // 火
     [
-      { ja: "【朝活】弾き語り", en: "Sing with a guitar" },
-      { ja: "龍が如く8外伝", en: "Like a Dragon 8 Gaiden" },
+      // { ja: "【朝活】弾き語り", en: "Sing with a guitar" },
+      { ja: "誕生日ネイル雑談", en: "Birthday Talking with nails" },
     ],
     // 水
     [
-      { ja: "【朝活】ネイル", en: "Talking with do nails" },
+      // { ja: "【朝活】ネイル", en: "Talking with do nails" },
       {
-        ja: "ろーるきゃべつ PowerWash Simulator",
-        en: "PowerWash Simulator with my friend",
+        ja: "ろーるきゃべつ もぐもぐお芋雑談",
+        en: "Talking and Eating with my friend",
       },
     ],
     // 木
     [
       // { ja: "【朝活】ネイル", en: "Talking in morning" },
-      { ja: "ぬめらじ公開", en: "nume's radio" },
+      { ja: "未定", en: "TBD" },
     ],
     // 金
     [
-      { ja: "【朝活】弾き語り", en: "Sing with a guitar" },
-      // { ja: "マイクラ夏祭り2025 day2", en: "Minecraft summer festival" },
+      // { ja: "【朝活】弾き語り", en: "Sing with a guitar" },
+      { ja: "マイクラ チル", en: "Minecraft" },
     ],
     // 土
     [
-      // { ja: "未定", en: "TBD" },
-      { ja: "龍が如く8外伝", en: "Like a Dragon 8 Gaiden" },
+      { ja: "龍が如く6", en: "Like a Dragon 6" },
+      { ja: "なんかやる", en: "TBD" },
     ],
     // 日
     [
@@ -64,7 +64,7 @@ export default function Schedule() {
     <section className="scheduleArea">
       <h2>{isEnglish ? "Streaming Schedule" : "配信スケジュール"}</h2>
       <div className="schedule-update">
-        2025.8.10 {isEnglish ? "Updated!" : "更新!"}
+        2025.9.22 {isEnglish ? "Updated!" : "更新!"}
       </div>
       <button
         className="schedule-toggle"
@@ -94,12 +94,12 @@ export default function Schedule() {
                       <div className="schedule-item-time">
                         {/* 時間は元のままハードコーディング */}
                         {(() => {
-                          if (index === 0) return i === 0 ? "9:00" : "15:00";
-                          if (index === 1) return i === 0 ? "8:00" : "22:00";
-                          if (index === 2) return i === 0 ? "9:00" : "22:00";
-                          if (index === 3) return i === 0 ? "17:00" : "";
-                          if (index === 4) return i === 0 ? "8:00" : "";
-                          if (index === 5) return "15:00";
+                          if (index === 0) return i === 0 ? "23:50" : "15:00";
+                          if (index === 1) return i === 0 ? "14:00" : "22:00";
+                          if (index === 2) return i === 0 ? "22:00" : "22:00";
+                          if (index === 3) return i === 0 ? "" : "";
+                          if (index === 4) return i === 0 ? "23:00" : "";
+                          if (index === 5) return i === 0 ? "14:00" : "22:00";
                           if (index === 6) return i === 0 ? "15:00" : "";
                           return "";
                         })()}
