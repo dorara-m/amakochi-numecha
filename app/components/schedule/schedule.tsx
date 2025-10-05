@@ -54,6 +54,7 @@ export default function Schedule() {
     // 土
     [
       { ja: "歌枠", en: "KARAOKE Stream" },
+      { ja: "うたみたshort投稿", en: "Upload a short singing video" },
       { ja: "GTA", en: "Grand Theft Auto" },
     ],
     // 日
@@ -102,7 +103,12 @@ export default function Schedule() {
                           if (index === 2) return i === 0 ? "22:00" : "22:00";
                           if (index === 3) return i === 0 ? "08:00" : "22:00";
                           if (index === 4) return i === 0 ? "08:00" : "";
-                          if (index === 5) return i === 0 ? "14:00" : "22:00";
+                          if (index === 5)
+                            return i === 0
+                              ? "14:00"
+                              : i === 1
+                              ? "17:00"
+                              : "22:00";
                           if (index === 6) return i === 0 ? "" : "";
                           return "";
                         })()}
