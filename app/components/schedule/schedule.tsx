@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import dayjs from "dayjs";
 
 export default function Schedule() {
-  const baseDate = dayjs("2025-09-22");
+  const baseDate = dayjs("2025-10-06");
 
   // 1週間の日付を生成
   const weekDates = Array.from({ length: 7 }, (_, index) => {
@@ -22,40 +22,43 @@ export default function Schedule() {
   const scheduleTitles = [
     // 月
     [
-      // { ja: "【朝活】マイクラ", en: "Minecraft" },
-      { ja: "誕生日耐久GTA", en: "Grand Theft Auto" },
+      { ja: "【朝活】GTA", en: "Grand Theft Auto" },
+      { ja: "デトロイト", en: "Detroit become human" },
     ],
     // 火
     [
-      // { ja: "【朝活】弾き語り", en: "Sing with a guitar" },
-      { ja: "誕生日ネイル雑談", en: "Birthday Talking with nails" },
+      { ja: "【朝活】弾き語り", en: "Sing with a guitar" },
+      // { ja: "", en: "Birthday Talking with nails" },
     ],
     // 水
     [
       // { ja: "【朝活】ネイル", en: "Talking with do nails" },
       {
-        ja: "ろーるきゃべつ もぐもぐお芋雑談",
-        en: "Talking and Eating with my friend",
+        ja: "ろーるきゃべつ power wash simulator",
+        en: "power wash simulator with 'pefu'",
       },
     ],
     // 木
     [
-      // { ja: "【朝活】ネイル", en: "Talking in morning" },
-      { ja: "未定", en: "TBD" },
+      { ja: "【朝活】マイクラ", en: "Minecraft" },
+      { ja: "龍が如く6", en: "Like a Dragon 6" },
     ],
     // 金
     [
-      // { ja: "【朝活】弾き語り", en: "Sing with a guitar" },
-      { ja: "マイクラ チル", en: "Minecraft" },
+      {
+        ja: "【朝活】ティアキン",
+        en: "The Legend of Zelda: Tears of the Kingdom",
+      },
+      // { ja: "マイクラ チル", en: "Minecraft" },
     ],
     // 土
     [
-      { ja: "龍が如く6", en: "Like a Dragon 6" },
-      { ja: "なんかやる", en: "TBD" },
+      { ja: "歌枠", en: "KARAOKE Stream" },
+      { ja: "GTA", en: "Grand Theft Auto" },
     ],
     // 日
     [
-      { ja: "歌枠", en: "KARAOKE Stream" },
+      { ja: "未定", en: "TBD" },
       // { ja: "マリオギャラクシー #8", en: "Mario Galaxy #8" },
     ],
   ];
@@ -64,7 +67,7 @@ export default function Schedule() {
     <section className="scheduleArea">
       <h2>{isEnglish ? "Streaming Schedule" : "配信スケジュール"}</h2>
       <div className="schedule-update">
-        2025.9.22 {isEnglish ? "Updated!" : "更新!"}
+        2025.10.5 {isEnglish ? "Updated!" : "更新!"}
       </div>
       <button
         className="schedule-toggle"
@@ -94,13 +97,13 @@ export default function Schedule() {
                       <div className="schedule-item-time">
                         {/* 時間は元のままハードコーディング */}
                         {(() => {
-                          if (index === 0) return i === 0 ? "23:50" : "15:00";
-                          if (index === 1) return i === 0 ? "14:00" : "22:00";
+                          if (index === 0) return i === 0 ? "08:30" : "22:00";
+                          if (index === 1) return i === 0 ? "08:00" : "22:00";
                           if (index === 2) return i === 0 ? "22:00" : "22:00";
-                          if (index === 3) return i === 0 ? "" : "";
-                          if (index === 4) return i === 0 ? "23:00" : "";
+                          if (index === 3) return i === 0 ? "08:00" : "22:00";
+                          if (index === 4) return i === 0 ? "08:00" : "";
                           if (index === 5) return i === 0 ? "14:00" : "22:00";
-                          if (index === 6) return i === 0 ? "15:00" : "";
+                          if (index === 6) return i === 0 ? "" : "";
                           return "";
                         })()}
                       </div>
