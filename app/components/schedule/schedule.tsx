@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import dayjs from "dayjs";
 
 export default function Schedule() {
-  const baseDate = dayjs("2025-10-12");
+  const baseDate = dayjs("2025-10-13");
 
   // 1週間の日付を生成
   const weekDates = Array.from({ length: 7 }, (_, index) => {
