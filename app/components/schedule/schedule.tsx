@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import dayjs from "dayjs";
 
 export default function Schedule() {
-  const baseDate = dayjs("2025-10-13");
+  const baseDate = dayjs("2025-10-20");
 
   // 1週間の日付を生成
   const weekDates = Array.from({ length: 7 }, (_, index) => {
@@ -21,29 +21,34 @@ export default function Schedule() {
   // スケジュールタイトル（日本語・英語）
   const scheduleTitles = [
     // 月
-    [{ ja: "未定", en: "TBD" }],
+    [{ ja: "龍が如く6", en: "Yakuza6" }],
     // 火
     [
-      { ja: "未定", en: "TBD" },
-      // { ja: "", en: "Birthday Talking with nails" },
+      { ja: "【朝活】ネイル", en: "Talking with do nails" },
+      { ja: "龍が如く6", en: "Yakuza6" },
     ],
     // 水
     [
-      // { ja: "【朝活】ネイル", en: "Talking with do nails" },
-      { ja: "未定", en: "TBD" },
+      {
+        ja: "【ろーるきゃべつ】ハロウィンAPEX",
+        en: "Halloween APEX with 'pefu'",
+      },
     ],
     // 木
-    [{ ja: "未定", en: "TBD" }],
+    [
+      { ja: "【朝活】弾き語り", en: "Singing with guitar" },
+      { ja: "GTA in アルクラ", en: "GTA" },
+    ],
     // 金
     [
-      { ja: "未定", en: "TBD" },
-      // { ja: "マイクラ チル", en: "Minecraft" },
+      // { ja: "", en: "TBD" },
+      { ja: "龍が如く6", en: "Yakuza6" },
     ],
     // 土
-    [{ ja: "未定", en: "TBD" }],
+    [{ ja: "ゼルダの伝説 ティアキン", en: "Zelda: Tears of the Kingdom" }],
     // 日
     [
-      { ja: "未定", en: "TBD" },
+      { ja: "GTA in アルクラ", en: "GTA" },
       // { ja: "マリオギャラクシー #8", en: "Mario Galaxy #8" },
     ],
   ];
@@ -52,7 +57,7 @@ export default function Schedule() {
     <section className="scheduleArea">
       <h2>{isEnglish ? "Streaming Schedule" : "配信スケジュール"}</h2>
       <div className="schedule-update">
-        2025.10.12 {isEnglish ? "Updated!" : "更新!"}
+        2025.10.20 {isEnglish ? "Updated!" : "更新!"}
       </div>
       <button
         className="schedule-toggle"
@@ -82,13 +87,13 @@ export default function Schedule() {
                       <div className="schedule-item-time">
                         {/* 時間は元のままハードコーディング */}
                         {(() => {
-                          if (index === 0) return i === 0 ? "" : "22:00";
-                          if (index === 1) return i === 0 ? "" : "22:00";
-                          if (index === 2) return i === 0 ? "" : "22:00";
-                          if (index === 3) return i === 0 ? "" : "22:00";
-                          if (index === 4) return i === 0 ? "" : "";
-                          if (index === 5) return i === 0 ? "" : "22:00";
-                          if (index === 6) return i === 0 ? "" : "";
+                          if (index === 0) return i === 0 ? "23:00" : "22:00";
+                          if (index === 1) return i === 0 ? "8:00" : "22:00";
+                          if (index === 2) return i === 0 ? "22:00" : "22:00";
+                          if (index === 3) return i === 0 ? "9:00" : "23:00";
+                          if (index === 4) return i === 0 ? "22:00" : "23:00";
+                          if (index === 5) return i === 0 ? "9:00" : "22:00";
+                          if (index === 6) return i === 0 ? "14:00" : "";
                           return "";
                         })()}
                       </div>
