@@ -1,4 +1,8 @@
 # 雨東風ぬめちゃ公式サイト
+## 技術スタック
+- Next.js
+- TypeScript
+- Sass
 
 ## 更新したら
 package.jsonのversion、footerを更新

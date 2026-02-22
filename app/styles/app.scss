@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  padding: 0 0 106px;
+  color: #fff;
 }
 
 body::before {
@@ -43,14 +43,6 @@ body::before {
   padding: 0 20px;
   max-width: 1000px;
   margin: 0 auto;
-  color: #fff;
-}
-
-h1 {
-  margin-top: 40px;
-  font-size: 40px;
-  margin-bottom: 24px;
-  line-height: 1.2;
 }
 
 // layout-parts

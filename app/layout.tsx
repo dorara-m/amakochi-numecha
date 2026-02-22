@@ -33,11 +33,9 @@ export default function RootLayout({
             <p>Amakochi Numecha</p>
           </a>
         </header>
-        <main>
-          <div className="container">{children}</div>
-        </main>
+        <main>{children}</main>
         <footer>
-          <p>Ver. 0.3</p>
+          <p>Ver. 1.0</p>
         </footer>
       </body>
     </html>
