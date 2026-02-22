@@ -32,10 +32,10 @@ export default function Page() {
           <div className="sns">
             <Button
               text="YouTube"
-              href="https://www.youtube.com/@amakochi-numecha"
+              href="https://www.youtube.com/@AmakochiNumecha"
               isBlank
             />
-            <Button text="X" href="https://x.com/amakochi_numecha" isBlank />
+            <Button text="X" href="https://x.com/numechaaa" isBlank />
           </div>
         </div>
       </div>
