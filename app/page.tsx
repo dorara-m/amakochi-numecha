@@ -28,7 +28,7 @@ export default function Page() {
         <div className="text-wrap">
           <h1>雨東風ぬめちゃ</h1>
           <p className="catch">一緒に雨宿り、どう？ ☔️🍃🐺</p>
-          <p className="sub">Stardew Valley｜歌枠｜Minecraft</p>
+          <p className="sub">Stardew Valley｜歌枠｜ポケモン｜龍が如く</p>
           <div className="sns">
             <Button
               text="YouTube"
@@ -52,6 +52,26 @@ export default function Page() {
                 <br />
                 少し寂しがり屋で、褒められるとしっぽが揺れます。
               </p>
+              <p>
+                特徴的な紫のメッシュは、
+                <a
+                  href="https://zukan.pokemon.co.jp/detail/0706"
+                  target="_blank"
+                >
+                  とある地方のドラゴン
+                </a>
+                の血が混じっているとかいないとか。
+              </p>
+              <p>
+                チルめ作業ゲーム（Stardew Valley, マイクラ）、歌枠、雑談多め。
+                <br />
+                ゼルダの伝説、龍が如く、ポケモンなども好き。
+              </p>
+              <p>
+                歌が大好き。歌ってみたが大好き。自分が救われたように、誰かの心を歌で救ってみたい。救えるような唄を届けたい。
+                <br />
+                目標は🌈🕘みたいな、心に響く3D音楽ライブをすること。
+              </p>
               <div className="button-wrap">
                 <Button text="配信ルール" href="/rules" />
                 <Button
@@ -60,18 +80,16 @@ export default function Page() {
                   isBlank
                 />
               </div>
-            </div>
-          </section>
-          <section className="hashtag">
-            <h2>ハッシュタグ</h2>
-            <div className="text-wrap">
-              <p>ハッシュタグは以下があります。適宜使ってください</p>
-              <ul>
-                <li>配信告知や感想　#あまこちらいぶ</li>
-                <li>ファンアート　#あまこちあーと</li>
-                <li>飯テロ　#あまこちごはーん</li>
-                <li>スケジュール告知　#あまこちすけじゅーる</li>
-              </ul>
+              <div className="hashtag">
+                <h3>ハッシュタグ</h3>
+                <ul>
+                  <li>配信告知・配信の感想　#あまこちらいぶ</li>
+                  <li>ファンアート　#あまこちあーと</li>
+                  <li>ぬめちゃに見てほしい　#あまこちみてみて</li>
+                  <li>飯テロ　#あまこちごはーん</li>
+                  <li>スケジュール告知　#あまこちすけじゅーる</li>
+                </ul>
+              </div>
             </div>
           </section>
           <section className="membership -center">
